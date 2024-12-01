@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login in</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--     <div class="loading-container">
+        <div class="person" id="person">😢</div>
+        <div class="loading-text">Convirtiéndose en millonario...</div>
+    </div>
+
+    <script src="login.js"></script> -->
+    <div id="particles-js"></div>
+    <header class="navbar fijo">
+        <div class="contenedor">
+            <div class="logo">
+                <p>Crecemos Juntos</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./explorar.html">Explora</a></li>
+                    <li><a href="./producto.html">Producto</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <!-- <button>Donar</button> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <!-- Login -->
+        <div class="form-wrapper sign-in relative">
+            <form id="loginForm" method="post" action="" onsubmit="return validarLogin()">
+                <h2>Login</h2>
+                <div class="input-group" style="position: relative;">
+                    <input type="text" id="loginUsername">
+                    <label for="">Username</label>
+                    <div class="error" id="loginUsernameError"></div>
+                </div>
+                <div class="input-group" style="position: relative;">
+                    <input type="password" id="loginPassword">
+                    <label for="">Password</label>
+                    <div class="error" id="loginPasswordError"></div>
+                </div>
+                <div class="remember">
+                    <label for=""><input type="checkbox">Remember me</label>
+                </div>
+                <div class="botones">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="singUp-link">
+                    <p>Don't have an account?<a href="#" class="signUpBtn-link">Sign up</a></p>
+                </div>
+                <div class="redes-sociales">
+                    <p>Iniciar sesión con</p>
+                    <div class="btn">
+                        <button><i class="ri-google-fill"></i></button>
+                        <button><i class="ri-facebook-circle-fill"></i></button>
+                        <button><i class="ri-twitter-x-line"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign up -->
+        <div class="form-wrapper sign-up">
+            <form id="signupForm" method="post" action="" onsubmit="return validarRegistro()">
+                <h2>Sign up</h2>
+                <div class="input-group" style="position: relative;">
+                    <input type="text" id="username">
+                    <label for="">Username</label>
+                    <div class="error" id="usernameError"></div>
+                </div>
+                <div class="input-group" style="position: relative;">
+                    <input type="email" id="email">
+                    <label for="">Email</label>
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="input-group" style="position: relative;">
+                    <input type="text" id="pais">
+                    <label for="">Pais</label>
+                    <div class="error" id="paisError"></div>
+                </div>
+                <div class="input-group" style="position: relative;">
+                    <input type="password" id="password">
+                    <label for="">Password</label>
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <div class="remember" style="position: relative;">
+                    <label for=""><input type="checkbox" id="terms">I agree to the terms & conditions</label>
+                    <div class="error" id="termsError"></div>
+                </div>
+                <div class="botones">
+                    <button type="submit">Sign up</button>
+                </div>
+                <div class="singUp-link">
+                    <p>Already have an account?<a href="#" class="signInBtn-link">Sign in</a></p>
+                </div>
+                <div class="redes-sociales">
+                    <p>Registrarse con</p>
+                    <div class="btn">
+                        <button><i class="ri-google-fill"></i></button>
+                        <button><i class="ri-facebook-circle-fill"></i></button>
+                        <button><i class="ri-twitter-x-line"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="error"></div>
+    </div>
+
+
+
+    <!-- libreria particular -->
+    <script src="librerias/particles.js"></script>
+    <!-- codigos javascript -->
+    <script src="js/login.js"></script>
+
+
+</body>
+
+</html>
